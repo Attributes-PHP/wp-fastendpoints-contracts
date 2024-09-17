@@ -1,0 +1,29 @@
+{
+  "name": "matapatos/wp-fastendpoints-contracts",
+  "type": "library",
+  "description": "Holds common contracts for WP-FastEndpoints",
+  "keywords": [
+    "wordpress",
+    "fastest",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wp\\FastEndpoints\\Contracts\\": "src/"
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "*"
+  },
+  "scripts": {
+    "lint": "./vendor/bin/pint",
+    "test:lint": "./vendor/bin/pint --test",
+    "test": [
+      "@test:lint"
+    ]
+  }
+}
