@@ -99,21 +99,4 @@ interface Endpoint
      * Specifies a set of plugins that are needed by the endpoint
      */
     public function depends(string|array $plugins): self;
-
-    /**
-     * Retrieves the registered REST route: namespace + route
-     */
-    public function getFullRestRoute(): ?string;
-
-    /**
-     * Retrieves the HTTP method of the endpoint
-     */
-    public function getHttpMethod(): string;
-
-    /**
-     * Retrieves the required endpoint plugins
-     *
-     * @return array<string>
-     */
-    public function getRequiredPlugins(): array;
 }
