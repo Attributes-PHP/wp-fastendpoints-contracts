@@ -141,4 +141,9 @@ interface Router
      * @return array<Router>
      */
     public function getSubRouters(): array;
+
+    /**
+     * Specifies a set of plugins that are needed by this router and all sub-routers
+     */
+    public function depends(string|array $plugins): self;
 }
