@@ -29,6 +29,7 @@ interface Endpoint
      * NOTE: Expects to be called inside the 'rest_api_init' WordPress action
      *
      * @since 0.9.0
+     *
      * @internal
      *
      * @param  string  $namespace  WordPress REST namespace.
