@@ -1,5 +1,5 @@
 {
-  "name": "matapatos/wp-fastendpoints-contracts",
+  "name": "attributes-php/wp-fastendpoints-contracts",
   "type": "library",
   "description": "Holds common contracts for WP-FastEndpoints",
   "keywords": [

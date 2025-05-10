@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Wp\FastEndpoints\Contracts\Validation;
 
+use Wp\FastEndpoints\Contracts\Validation\Options\Alias;
 use Wp\FastEndpoints\Contracts\Validation\Options\From;
 
 /**
@@ -34,22 +35,27 @@ use Wp\FastEndpoints\Contracts\Validation\Options\From;
 abstract class BaseModel
 {
     /**
-     * Where to fetch the parameters from
+     * Holds options to be applied to validation model
+     *
+     * @internal
+     *
+     * @var array<\UnitEnum>
      */
-    protected From $from;
+    private array $_options = [];
 
-    public function __construct(From $from = From::JSON)
+    public function __construct(From $from = From::JSON, Alias $alias = Alias::NONE)
     {
-        $this->from = $from;
+        $this->_options[] = $from;
+        $this->_options[] = $alias;
     }
 
     /**
-     * @return array<string,mixed>
+     * Retrieves the current options to be applied to model
+     *
+     * @return array<\UnitEnum>
      */
-    public function getConfigs(): array
+    public function getOptions(): array
     {
-        return [
-            'from' => $this->from,
-        ];
+        return $this->_options;
     }
 }
