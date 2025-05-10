@@ -9,7 +9,7 @@ Holds common contracts for **[WP-FastEndpoints](https://github.com/matapatos/wp-
 ## Installation
 
 ```bash
-composer require wp-fastendpoints-contracts
+composer require attributes-php/wp-fastendpoints-contracts
 ```
 
 FastEndpoints Contracts was created by **[André Gil](https://www.linkedin.com/in/andre-gil/)** and is open-sourced software licensed under the **[MIT license](https://opensource.org/licenses/MIT)**.
