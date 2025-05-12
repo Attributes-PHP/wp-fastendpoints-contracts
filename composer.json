@@ -13,7 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Wp\\FastEndpoints\\Contracts\\": "src/"
+      "Attributes\\Wp\\FastEndpoints\\Contracts\\": "src/"
     }
   },
   "require-dev": {

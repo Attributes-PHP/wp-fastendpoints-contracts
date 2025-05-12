@@ -10,9 +10,9 @@
 
 declare(strict_types=1);
 
-namespace Wp\FastEndpoints\Contracts\Http;
+namespace Attributes\Wp\FastEndpoints\Contracts\Http;
 
-use Wp\FastEndpoints\Contracts\Middlewares\Middleware;
+use Attributes\Wp\FastEndpoints\Contracts\Middlewares\Middleware;
 
 /**
  * REST Endpoint interface that registers custom WordPress REST endpoints

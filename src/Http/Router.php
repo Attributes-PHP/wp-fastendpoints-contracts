@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-namespace Wp\FastEndpoints\Contracts\Http;
+namespace Attributes\Wp\FastEndpoints\Contracts\Http;
 
 /**
  * An interface that helps developers in creating groups of endpoints. This way developers can aggregate

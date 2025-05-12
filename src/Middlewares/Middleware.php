@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-namespace Wp\FastEndpoints\Contracts\Middlewares;
+namespace Attributes\Wp\FastEndpoints\Contracts\Middlewares;
 
 use Exception;
 
