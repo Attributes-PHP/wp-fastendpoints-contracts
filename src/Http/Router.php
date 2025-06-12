@@ -92,16 +92,6 @@ interface Router
     public function includeRouter(Router &$router): void;
 
     /**
-     * Includes a router as a sub router
-     *
-     * @param  string  $dir  Directory path where to look for JSON schemas.
-     * @param  string  $uriPrefix  Prefix used to associate schema directory.
-     *
-     * @since 0.9.0
-     */
-    public function appendSchemaDir(string $dir, string $uriPrefix): void;
-
-    /**
      * Adds all actions required to register the defined endpoints
      *
      * @since 0.9.0
