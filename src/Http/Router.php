@@ -131,15 +131,4 @@ interface Router
      * @param  bool  $override  If set, overrides any existent dependency. Default value: false.
      */
     public function inject(string $name, callable $handler, bool $override = false): self;
-
-    /**
-     * Adds a handler for a given exception.
-     *
-     * Handlers will be resolved on the following order: 1) by same exact exception or 2) by a parent class
-     *
-     * @param  string  $exceptionClass  The exception class to add a handler.
-     * @param  callable  $handler  The handler to resolve those types of exceptions.
-     * @param  bool  $override  If set, overrides any existent handlers. Default value: false.
-     */
-    public function onException(string $exceptionClass, callable $handler, bool $override = false): self;
 }

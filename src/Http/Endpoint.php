@@ -76,15 +76,4 @@ interface Endpoint
      * @internal
      */
     public function getFullRoute(): string;
-
-    /**
-     * Adds a handler for a given exception.
-     *
-     * Handlers will be resolved on the following order: 1) by same exact exception or 2) by a parent class
-     *
-     * @internal
-     *
-     * @param  string  $exceptionClass  The exception to look-up for
-     */
-    public function onException(string $exceptionClass, callable $handler, bool $override = false): self;
 }
