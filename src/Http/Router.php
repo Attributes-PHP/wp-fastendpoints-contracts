@@ -120,6 +120,22 @@ interface Router
     public function depends(string|array $plugins): self;
 
     /**
+     * Registers a permission callback for all endpoints in this router and its sub-routers
+     *
+     * @param  callable  $permissionCb  Method to be called to check current user permissions.
+     */
+    public function permission(callable $permissionCb): self;
+
+    /**
+     * Inherits permission callbacks from a parent router
+     *
+     * @param  array<callable>  $permissionHandlers  Permission callbacks inherited from the parent router.
+     *
+     * @internal
+     */
+    public function setInheritPermissionHandlers(array $permissionHandlers): self;
+
+    /**
      * Adds a dependency which can then be injected in endpoints, middlewares or permission handlers.
      *
      * This should be useful to share common dependencies across multiple handlers e.g. database connection.
